@@ -1,0 +1,107 @@
+
+
+/* All file CSS */
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+html{
+    font-size: 62.5%;
+}
+
+/* Heading/Banner CSS */
+#head{
+    /* background-image: url(./img/bgimg.jpg); */
+    /* background-color: rgb(243, 219, 180); */
+    background-image: url("http://lebonsiu.com/wp-content/uploads/2021/12/Halftones.jpg");
+}
+
+nav{
+    display: none;
+}
+.txt{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.txt-co{
+    color: #0586ca;
+    font-size: 1.6rem;
+    padding-right: 200vh;
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/* About */
+.flex-container{
+    display: flex;
+    padding: 0 7%;
+    margin-top: 6rem;
+    background-color: white;
+}
+
+
+.flex-container .flex-items .flex-img img{
+    height:350px;
+    width:950px;
+    background-image: url("http://lebonsiu.com/wp-content/uploads/2021/12/Rabbithole-Typography.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.flex-container .flex-items h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.flex-container .flex-items h3 span{
+    color: #0586ca;
+}
+.flex-container .flex-items p{
+    font-family: 'Manrope',sans-serif;
+    color: #383933;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 20px!important;
+    margin: 20px;
+    padding-right:25px
+}
+
+/* Horizontal Line */
+.line{
+     border-top: 1px dotted red;
+}
+
+/* Skills */
+.skill-container{
+    display:flex;
+    padding: 0 5%;
+    
+}
+
+.single-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-skill-img img{
+    width: 25vh;
+    padding-right: 2rem;
+}
+.single-skill-text{
+    
+    font-size: medium;
+    width:65%;
+}
