@@ -12,9 +12,9 @@
     vertical-align: baseline;
     background: transparent;
 }
-html{
+/* html{
     font-size: 62.5%;
-}
+} */
 
 /* Heading/Banner CSS */
 #head{
@@ -23,12 +23,18 @@ html{
     background-image: url("http://lebonsiu.com/wp-content/uploads/2021/12/Halftones.jpg");
 }
 
-nav{
-    display: none;
+#navbar{
+    position: fixed; /* Make it stick/fixed */
+    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%;
+    background-color: white; /* Full width */
+    transition: top 0.5s; /* Transition effect when sliding down (and up) */
+    
 }
+
 .txt{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1rem;
 }
 .txt-co{
     color: #0586ca;
@@ -42,6 +48,8 @@ a{
     text-decoration: none;
 }
 
+
+
 /* About */
 .flex-container{
     display: flex;
@@ -51,17 +59,68 @@ a{
 }
 
 
-.flex-container .flex-items .flex-img img{
+.flex-container .flex-items .flex-img{
     height:350px;
-    width:950px;
-    background-image: url("http://lebonsiu.com/wp-content/uploads/2021/12/Rabbithole-Typography.svg");
+    width:350px;
+    background: url("http://lebonsiu.com/wp-content/uploads/2021/12/Rabbithole-Typography.svg") ;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
+
+#flow{
+    position: relative;
+    animation-name: vertical;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation: updown 2s linear 0 infinite; */
+}
+@keyframes vertical {
+    0%{
+        
+        transform: translateY(0px);
+    }
+    50%{
+        
+        transform: translateY(25px);
+    }
+    100%{
+        
+        transform: translateY(0px);
+    }
+}
+
+#keylink:hover {
+    position: relative;
+    animation-name: twist;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes twist{
+    0%{
+        
+        transform: translateY(0px);
+    }
+    50%{
+        
+        transform: translateY(25px);
+    }
+    100%{
+        
+        transform: translateY(0px);
+    }
+}
+
 .flex-container .flex-items h3{
-    font-size: 2.5rem;
+    color: #333333;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1.7rem;
     font-weight: bold;
+    line-height: 2.5rem;
+    padding-left: 20px;
 
 }
 
@@ -71,7 +130,7 @@ a{
 .flex-container .flex-items p{
     font-family: 'Manrope',sans-serif;
     color: #383933;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 20px!important;
     margin: 20px;
@@ -84,24 +143,91 @@ a{
 }
 
 /* Skills */
-.skill-container{
-    display:flex;
-    padding: 0 5%;
-    
-}
-
-.single-skill{
+.skill{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.single-skill-img img{
-    width: 25vh;
+.skill .skill-heading h2{
+    color: #333333;
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: bold;
+}
+
+
+.skill .skill-container{
+    display:flex;
+    /* position: relative; */
+    /* padding: 5px 10px; */
+    
+    /* flex-wrap: wrap; */
+    
+    
+}
+
+.skill .skill-container .single-skill{
+    display: flex;
+    /* position: relative; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    /* height: 300px; */
+
+}
+
+.single-skill img{
+    width: 18vh;
     padding-right: 2rem;
 }
 .single-skill-text{
+    /* padding-right: 2rem; */
+    font-size: 16px;
+    width:70%;
+    font-family: manrope, sans-serif;
+}
+
+.single-skill-text p a{
+    color:#0586ca;
+    text-decoration: underline;
+}
+
+.single-skill-text p a:hover{
+    color:#01a6ff;
     
-    font-size: medium;
-    width:65%;
+}
+
+.single-skill-text h2{
+    font-size: larger;
+    font-weight: bold;
+    color: #333333;
+    font-family: 'Ibarra Real Nova', serif;
+
+}
+
+/* Contact Section */
+#contact-box{
+    /* padding-top: 80px;
+    padding-bottom: 80px; */
+    background-color: #383933;
+    line-height: 20px;
+    
+    
+}
+
+#contact-text p{
+    font-family: 'Manrope',sans-serif;
+    /* max-width: 80%;    */
+}
+
+#footer{
+    background-color: #383933;
+
+}
+.mail-feature img{
+    width: 110px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
 }

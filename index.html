@@ -14,75 +14,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Lebon Siu</title>
+
+
 </head>
 
 <body>
-  <!-- <header class="d-flex justify-content-center py-3">
-    <ul class="nav nav-pills ">
-      <li class="nav-item"><a href="#" class="nav-link text-dark" aria-current="page">About</a></li>
-      <li class="nav-item"><a href="#" class="nav-link text-dark">Skills</a></li>
-      <li class="nav-item"><a href="#" class="nav-link text-dark">Portfolio</a></li>
-      <li class="nav-item"><a href="#" class="nav-link text-dark">Contact</a></li>
-    </ul>
-  </header> -->
-  <!-- <div class="container-fluid">
-    <div class="h-100 d-flex flex-column justify-content-center align-items-center">
-      <h3 class="">Lebon Siu – Graphic Designer</h3>
-      <h3 class=""><img src="/FirstAssignment.png" alt=""></h3>
-      <h3 class=""><img src="/Burrowing-Rabbit.png" alt=""></h3>
-    </div> -->
 
-  <!-- </div> -->
-  <!-- <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>
-              Heading
-            </h2>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            </p>
-            <p>
-              <a class="btn" href="#">View details »</a>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <img alt="Bootstrap Image Preview" class="img-fluid" src="/FirstAssignment.png" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <img alt="Bootstrap Image Preview" src="/Burrowing-Rabbit.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!-- <div class="container-fluid">
-    <div class="d-flex flex-column justify-content-center bg-dark">
-      <div class="text-white p-2">Graphic Designer</div>
-      <div class="text-white p-2">Graphic Designer</div>
-    </div>
-  </div> -->
   <main>
     <!-- Navigation Bar -->
-    <nav>
-      <header class="d-flex justify-content-center py-3">
+    <nav id="navbar">
+      <header class="d-flex justify-content-center py-1">
         <ul class="nav nav-pills ">
-          <li class="nav-item"><a href="#" class="nav-link text-dark" aria-current="page">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-dark">Skills</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-dark">Portfolio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-dark">Contact</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link text-dark" aria-current="page">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link text-dark">Skills</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link text-dark">Portfolio</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link text-dark">Contact</a></li>
         </ul>
       </header>
     </nav>
@@ -114,13 +67,14 @@
 
     <!-- About Section of Page -->
 
-    <section class="flex-container">
+    <section id="about" class="flex-container">
       <div class="flex-items container-fluid">
-        <div class="flex-img "><img src="/images/Floating-Objects.png" class="img-fluid" alt=""></div>
+        <div class="flex-img "><img src="/images/Floating-Objects.png" class="img-fluid " id="flow" alt=""></div>
       </div>
       <div class="flex-items">
         <h3>Hi ! My Name is <span>Lebon Siu.</span> <br> I’m a <span>graphic designer</span> based in
-          <span>Vancouver.</span></h3>
+          <span>Vancouver.</span>
+        </h3>
         <p>I design high-concept digital experiences for businesses, and bring a unique perspective to design through my
           background in film and video. I have had the privelage to work with clients such as Fairmont, BC Liquor,
           Vancouver is Awesome, and more.</p>
@@ -138,13 +92,15 @@
     <hr class="line">
 
     <!-- Skills -->
-    <section class="skill">
+    <section id="skills" class="skill container-fluid">
       <div class="skill-heading ">
-        <h1 class="text-center pt-5">Skills</h2>
+        <h2 class="text-center pt-5">Skills</h2>
       </div>
-      <div class="skill-container pt-5">
-        <div class="single-skill ">
-          <div class="single-skill-img"><img src="/images/skill0.jpg" width="10%" alt=""></div>
+      <div class="skill-container ">
+        <div class="single-skill " onmouseover="mouseOn(1)" onmouseleave="mouseOff(1)">
+          <div class="single-skill-img"><img src="/images/skill0.jpg" id="img1" alt="">
+
+          </div>
           <div class="single-skill-text">
             <h2>HTML/CSS</h2>
             <P>
@@ -152,68 +108,168 @@
               personality to the forefront, creating highly customized and immersive web experiences.</P>
           </div>
         </div>
-        <div class="single-skill">
-          <div class="single-skill-img"><img src="/images/skill0.jpg" width="10%" alt=""></div>
+        <div class="single-skill " onmouseover="mouseOn(2)" onmouseleave="mouseOff(2)">
+          <div class="single-skill-img"><img src="/images/skill0.jpg" id="img2" alt=""></div>
           <div class="single-skill-text">
             <h2>Editing & Motion Graphics</h2>
             <P>
               My background in videography means I'm proficient in video editing softwares such as Adobe Premiere, Adobe
-              After Effects, and Final Cut Pro. On my free time, you'll find me brushing up on my motion graphic skills.
+              After Effects, and Final Cut Pro. On my free time, you'll find me brushing up on my <a href="#">motion
+                graphic skills.</a>motion graphic skills.
             </P>
           </div>
         </div>
-        
       </div>
-      <div class="skill-container pt-5">
-        <div class="single-skill ">
-          <div class="single-skill-img"><img src="/images/skill0.jpg" width="10%" alt=""></div>
+      <div class="skill-container py-2 ">
+        <div class="single-skill  " onmouseover="mouseOn(3)" onmouseleave="mouseOff(3)">
+          <div class="single-skill-img"><img src="/images/skill0.jpg" id="img3" alt=""></div>
           <div class="single-skill-text">
             <h2>Illustration</h2>
             <P>
-              I am well-versed in all Adobe softwares such as XD, Photoshop and Illustrator, and often find myself combining my illustration skills with design.</P>
+              I am well-versed in all Adobe softwares such as XD, Photoshop and Illustrator, and often find myself
+              combining my <a href="#">illustration skills</a> with design.</P>
           </div>
         </div>
-        <div class="single-skill">
-          <div class="single-skill-img"><img src="/images/skill0.jpg" width="10%" alt=""></div>
+        <div class="single-skill" onmouseover="mouseOn(4)" onmouseleave="mouseOff(4)">
+          <div class="single-skill-img"><img src="/images/skill0.jpg" id="img4" alt=""></div>
           <div class="single-skill-text">
             <h2>Visual Builders & Platforms</h2>
             <P>
-              I am a quick learner when it comes to learning new platforms. I have experience in online visual builders such as Shopify, Unbounce, Ceros, WordPress, and Flexitive. I'm also currently learning webflow.
+              I am a quick learner when it comes to learning new platforms. I have experience in online visual builders
+              such as Shopify, Unbounce, Ceros, WordPress, and Flexitive. I'm also currently learning webflow.
             </P>
           </div>
         </div>
-        
       </div>
-      
-    </section>
 
+
+    </section>
+    <section id="portfolio" class="bg-light my-10">
+      <div class="container-fluid ">
+        <div class="text-center pt-20">
+          <h2>Portfolio</h2>
+          <p class="lead muted-text">My design experience ranges from web design, branding, video, and more.</p>
+          <p class="lead muted-text">Take a more in-depth look at some of my favorite work.</p>
+        </div>
+
+        <div class="row my-5 align-items-center justify-content-center">
+          <div class="col">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <div class="card-title"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </div>
+
+    </section>
+    <section id="contact">
+      <div class="container-fluid ">
+        <div id="contact-box" class="row justify-content-center text-light px-5 py-5">
+          <div class="col text-center" style="padding: 20px 40px 0px 40px; box-sizing: border-box;">
+            <h4>You can't leave a tea party <br>without a cup of tea, you know?</h4><br>
+            <img src="/images/Floating-Teacups.jpg" alt="Floating-Teacups" class="img-fluid anime" width="400px"
+              style="z-index: -1;">
+          </div>
+          <div id="contact-text" class="col mx-5 px-5 " style="padding: 20px 40px 0px 40px; box-sizing: border-box;">
+            <p class=""><small>Leaving so soon? I feel like we've barely scratched the surface! I haven't had a chance
+              to tell you about my smokey bear obsession, my love for poutine, or my bad genre film
+              collection!<br><br>
+              If you have a project for me or simply want to get to know me better, why don’t you invite me out for a
+              cup of tea?</small>
+            </p>
+            <div class="row d-flex flex-column">
+              <div id="key-link" class="col py-2">
+                <img src="/images/Email-Key.jpg" class="img-fluid" width="100px"alt="email-key">
+                <a href="mailto:hello@lebonsiu.com" style="text-decoration:underline" class=" h5 text-white"><strong>hello@lebonsiu.com</strong></a>
+               </div>
+              <div id="key-link" class="col py-2 ">
+                <img src="/images/LinkedIn-Key.jpg" class="img-fluid" width="100px"alt="linkedin-key">
+                <a href="https://www.linkedin.com/in/lebon-siu/" style="text-decoration:underline" class=" h5 text-white"><strong>LinkedIn</strong></a> 
+              </div>
+              <div id="key-link" class="col py-2 ">
+                <img src="/images/BH-Key.jpg" class="img-fluid" width="100px"alt="behance-key">
+                <a href="https://www.behance.net/lebon-siu" style="text-decoration:underline" class=" h5 text-white"><strong>
+                Behance</strong></a> 
+              </div>
+            </div>
+            <div class="row">
+              
+            </div>
+          </div>
+          
+          
+        </div>
+        
+        </div>
+      </div>
+
+    </section>
+    <footer id = "footer" class="text-light text-center position-relative py-2">
+      <div class="container-fluid">
+          <p class="lead-muted ">
+              Copyright &copy; 2022 Lebon Siu.
+          
+          <a href="#head" class=" position-relative bottom-2 text-light text-decoration-underline  "> &NonBreakingSpace;Back to Top
+              <i class="bi bi-arrow-up"></i>
+              
+          </a>
+        </p>
+      </div>
+
+  </footer>
+
+    <div class="mail-feature">
+      <a href="#"><img src="/images/Featured-Button.png" alt=""></a>
+    </div>
 
 
   </main>
+  <script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+    }
+
+    function mouseOn(x) {
+      switch (x) {
+        case 1: document.getElementById('img1').src = "/images/skill1.gif"
+          break;
+        case 2: document.getElementById('img2').src = "/images/skill2.gif"
+          break;
+        case 3: document.getElementById('img3').src = "/images/skill3.gif"
+          break;
+        case 4: document.getElementById('img4').src = "/images/skill4.gif"
+      }
+
+    }
+
+    function mouseOff(y) {
+      switch (y) {
+        case 1: document.getElementById('img1').src = "/images/skill0.jpg"
+          break;
+        case 2: document.getElementById('img2').src = "/images/skill0.jpg"
+          break;
+        case 3: document.getElementById('img3').src = "/images/skill0.jpg"
+          break;
+        case 4: document.getElementById('img4').src = "/images/skill0.jpg"
+      }
+    }
 
 
-
+  </script>
 
 
 </body>
 
 </html>
-
-<!-- <div class="single-skill">
-          <div class="single-skill-img"><img src="/skill0.jpg" width="10%" alt=""></div>
-          <div class="single-skill-text">
-            <h2>Illustration</h2>
-            <P>
-              I am well-versed in all Adobe softwares such as XD, Photoshop and Illustrator, and often find myself
-              combining my illustration skills with design.</P>
-          </div>
-          
-        </div>
-        <div class="single-skill">
-          <div class="single-skill-img"><img src="/skill0.jpg" width="10%" alt=""></div>
-          <div class="single-skill-text">
-            <h2>Visual Builders & Platforms</h2>
-            <P>
-              I am a quick learner when it comes to learning new platforms. I have experience in online visual builders such as Shopify, Unbounce, Ceros, WordPress, and Flexitive. I'm also currently learning webflow.</P>
-          </div>
-        </div> -->
