@@ -5,22 +5,12 @@
     margin: 0;
     padding: 0;
     border: 0;
-    outline: 0;
-    font-size: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-/* html{
-    font-size: 62.5%;
-} */
 
-/* Heading/Banner CSS */
+}
+
+/* Heading */
 #head{
-    /* background-image: url(./img/bgimg.jpg); */
-    /* background-color: rgb(243, 219, 180); */
-    background-image: url("http://lebonsiu.com/wp-content/uploads/2021/12/Halftones.jpg");
+    background-image: url("/images/background.jpg");
 }
 
 #navbar{
@@ -29,20 +19,14 @@
     width: 100%;
     background-color: white; /* Full width */
     transition: top 0.5s; /* Transition effect when sliding down (and up) */
+    z-index: 10;
     
 }
 
-.txt{
+.text{
     text-align: center;
     font-size: 1rem;
 }
-.txt-co{
-    color: #0586ca;
-    font-size: 1.6rem;
-    padding-right: 200vh;
-    text-align: center;
-}
-
 
 a{
     text-decoration: none;
@@ -62,7 +46,7 @@ a{
 .flex-container .flex-items .flex-img{
     height:350px;
     width:350px;
-    background: url("http://lebonsiu.com/wp-content/uploads/2021/12/Rabbithole-Typography.svg") ;
+    background: url("/images/Rabbithole-Typography.svg") ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,8 +58,8 @@ a{
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    /* animation: updown 2s linear 0 infinite; */
 }
+
 @keyframes vertical {
     0%{
         
@@ -91,29 +75,9 @@ a{
     }
 }
 
-#keylink:hover {
-    position: relative;
-    animation-name: twist;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-}
 
-@keyframes twist{
-    0%{
-        
-        transform: translateY(0px);
-    }
-    50%{
-        
-        transform: translateY(25px);
-    }
-    100%{
-        
-        transform: translateY(0px);
-    }
-}
 
+/* Skills */
 .flex-container .flex-items h3{
     color: #333333;
     font-family: 'Ibarra Real Nova', serif;
@@ -139,7 +103,8 @@ a{
 
 /* Horizontal Line */
 .line{
-     border-top: 1px dotted red;
+     border-top: 1px dotted #f4f4f4;
+     margin: 0 10%;
 }
 
 /* Skills */
@@ -157,23 +122,14 @@ a{
 
 
 .skill .skill-container{
-    display:flex;
-    /* position: relative; */
-    /* padding: 5px 10px; */
-    
-    /* flex-wrap: wrap; */
-    
-    
+    display:flex;  
 }
 
 .skill .skill-container .single-skill{
     display: flex;
-    /* position: relative; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    /* height: 300px; */
 
 }
 
@@ -182,7 +138,6 @@ a{
     padding-right: 2rem;
 }
 .single-skill-text{
-    /* padding-right: 2rem; */
     font-size: 16px;
     width:70%;
     font-family: manrope, sans-serif;
@@ -206,19 +161,50 @@ a{
 
 }
 
+
+/* Portfolio Section */
+#portfolio{
+    background-image: url("/images/background.jpg");
+}
+
+#portfolio h2{
+    font-family: 'Ibarra Real Nova',serif;
+}
+
+#portfolio .portfolio-sub-heading{
+    font-family: 'Manrope',sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+#portfolio p{
+    font-size: 12px;
+    font-family: manrope, sans-serif;
+    text-align: center;
+}
+
+#portfolio span{
+    background-color: #F5F3F0;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #333;
+}
+#portfolio h5{
+    font-family: 'Ibarra Real Nova',serif;
+    font-weight: 500;
+    color: #333;
+}
+
 /* Contact Section */
 #contact-box{
-    /* padding-top: 80px;
-    padding-bottom: 80px; */
     background-color: #383933;
-    line-height: 20px;
-    
-    
+    line-height: 20px;  
 }
 
 #contact-text p{
     font-family: 'Manrope',sans-serif;
-    /* max-width: 80%;    */
+    max-width: 80%;   
 }
 
 #footer{
@@ -230,4 +216,36 @@ a{
     position: fixed;
     bottom: 25px;
     right: 25px;
+}
+
+#key-link{
+    transition: transform;
+}
+#key-link:hover img{
+ transform: rotate(-10deg);
+}
+
+/* Media Queries */
+@media(max-width:980px){
+    #navbar{
+        display: none;
+    }
+
+    #about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .skill .skill-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        
+    }
+
+    .skill .skill-container .single-skill{
+        padding-bottom: 1rem;
+    }
+
+
 }

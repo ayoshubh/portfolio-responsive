@@ -19,9 +19,13 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
+  <!-- CSS file -->
   <link rel="stylesheet" href="style.css">
-  <title>Lebon Siu</title>
 
+  <!-- logo -->
+  <link rel="icon" href="/images/logo.png" sizes="32x32">
+
+  <title>Lebon Siu</title>
 
 </head>
 
@@ -40,8 +44,8 @@
       </header>
     </nav>
 
-    <!-- Heading/Banner -->
-    <section id="head" class="container-fluid pt-2 text-center txt">
+    <!-- Heading -->
+    <section id="head" class="container-fluid pt-2 text-center text">
       <div class="row">
         <div class="col p-4">Lebon Siu - Graphic Designer</div>
       </div>
@@ -69,9 +73,10 @@
 
     <section id="about" class="flex-container">
       <div class="flex-items container-fluid">
-        <div class="flex-img "><img src="/images/Floating-Objects.png" class="img-fluid " id="flow" alt=""></div>
+        <div class="flex-img container-fluid"><img src="/images/Floating-Objects.png" class="img-fluid " id="flow"
+            alt=""></div>
       </div>
-      <div class="flex-items">
+      <div class="flex-items container-fluid">
         <h3>Hi ! My Name is <span>Lebon Siu.</span> <br> I’m a <span>graphic designer</span> based in
           <span>Vancouver.</span>
         </h3>
@@ -92,7 +97,7 @@
     <hr class="line">
 
     <!-- Skills -->
-    <section id="skills" class="skill container-fluid">
+    <section id="skills" class="skill container">
       <div class="skill-heading ">
         <h2 class="text-center pt-5">Skills</h2>
       </div>
@@ -141,86 +146,282 @@
           </div>
         </div>
       </div>
-
-
     </section>
-    <section id="portfolio" class="bg-light my-10">
-      <div class="container-fluid ">
-        <div class="text-center pt-20">
-          <h2>Portfolio</h2>
-          <p class="lead muted-text">My design experience ranges from web design, branding, video, and more.</p>
-          <p class="lead muted-text">Take a more in-depth look at some of my favorite work.</p>
-        </div>
 
-        <div class="row my-5 align-items-center justify-content-center">
-          <div class="col">
-            <div class="card border-0">
-              <div class="card-body text-center py-4">
-                <div class="card-title"></div>
+    <!-- Portfolio  -->
+    <section id="portfolio" class="my-5">
+      <div class="container">
+        <div class="text-center pt-5">
+          <h2><strong>Portfolio</strong></h2>
+          <p class="portfolio-sub-heading">My design experience ranges from web design, branding, video, and
+            more.<br>Take a more in-depth look at some of my favorite work.</p>
+
+        </div>
+        <!-- ROW 1 -->
+        <div class="row container g-3 mt-1">
+          <!-- CARD 1 -->
+          <div class="col-12 col-lg-4 mt-1 ">
+            <div class="card container border-0 pt-4 bg-white g-3">
+              <div class="card-header border-0 bg-white d-flex justify-content-between">
+                <img src="/images/spade-up.svg" alt="" class="">
+                <span class="badge badge-light text-dark">Full Design & Development</span>
+              </div>
+              <img src="/images/RadicalBlueberry-Mockup.jpg" alt="" class="mx-4  ">
+              <div class="card-body ">
+                <h5 class="card-title text-center"><strong>Radical Blueberry</strong></h5>
+                <p class="card-text">An environmentally concious blueberry farm out in Surrey. This project was the
+                  perfect marriage between graphic design and topics that I love.
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-white d-flex justify-content-between">
+                <span>&NonBreakingSpace;</span>
+                <button type="button" class="btn btn-primary">View on Behance</button>
+                <img src="/images/spade-down.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="col"></div>
-          <div class="col"></div>
+          <!-- CARD 2 -->
+          <div class="col-12 col-lg-4 mt-4">
+            <div class="card container border-0 bg-white g-3">
+              <div class="card-header border-0 pt-4 bg-white d-flex justify-content-between">
+                <img src="/images/heart-up.svg" alt="">
+                <span class="badge badge-light text-dark">Motion Design & Illustration
+                </span>
+              </div>
+              <img src="/images/Quest-Mockup.jpg" alt="" class="mx-4 ">
+              <div class="card-body ">
+                <h5 class="card-title text-center"><strong>Quest Vitamins</strong></h5>
+                <p class="card-text">Animated custom character designs for Quest Vitamins. This video showcases my
+                  illustration skills as well as motion graphic skills.
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-white d-flex justify-content-between">
+                <span>&NonBreakingSpace;</span>
+                <button type="button" class="btn btn-primary">View on Behance</button>
+                <img src="/images/heart-down.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div class="col-12 col-lg-4 mt-5">
+            <div class="card container border-0 pt-4 bg-white g-3">
+              <div class="card-header border-0 bg-white d-flex justify-content-between">
+                <img src="/images/diamond-up.svg" alt="">
+                <span class="badge badge-secondary text-dark">UX/UI</span>
+              </div>
+              <img src="/images/Nettrux-Mockup.jpg" alt="" class="mx-4">
+              <div class="card-body ">
+                <h5 class="card-title text-center"><strong>Nettrux LLC</strong></h5>
+                <p class="card-text">A website for a freight brokerage. This project was heavy on UX/UI design. I
+                  especially love the UI elements I developed.
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-white d-flex justify-content-between">
+                <span>&NonBreakingSpace;</span>
+                <button type="button" class="btn btn-primary">View on Behance</button>
+                <img src="/images/diamond-down.svg" alt="">
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- ROW 2 -->
+        <div class="row container g-3 mt-1">
+          <!-- CARD 4 -->
+          <div class="col-12 col-lg-4 mt-1 ">
+            <div class="card container border-0 pt-4 bg-white g-3">
+              <div class="card-header border-0 bg-white d-flex justify-content-between">
+                <img src="/images/club-up.svg" alt="" class="">
+                <span class="badge badge-light text-dark">Motion Design & Editing</span>
+              </div>
+              <img src="/images/BCLiquor-Mockup.jpg" alt="" class="mx-4  ">
+              <div class="card-body ">
+                <h5 class="card-title text-center"><strong>BC Liquor</strong></h5>
+                <p class="card-text">An environmentally concious blueberry farm out in Surrey. This project was the
+                  perfect marriage between graphic design and topics that I love.
+                </p>
+              </div>
+              <div class="card-footer border-0 pt-4 bg-white d-flex justify-content-between">
+                <span>&NonBreakingSpace;</span>
+                <button type="button" class="btn btn-primary">View on Behance</button>
+                <img src="/images/club-down.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- CARD-5 -->
+          <div class="col-12 col-lg-4 mt-4">
+            <div class="card container border-0 bg-white g-3">
+              <div class="card-header border-0 pt-4 bg-white d-flex justify-content-between">
+                <img src="/images/spade-up.svg" alt="">
+                <span class="badge badge-light text-dark">Full Design & Development
+                </span>
+              </div>
+              <img src="/images/CasaCorsi-Mockup.jpg" alt="" class="mx-4 ">
+              <div class="card-body ">
+                <h5 class="card-title text-center"><strong>Casa Corsi</strong></h5>
+                <p class="card-text">An italian restaurant in North Vancouver. The client is really proud of their
+                  family/heritage and I wanted to reflect that in the website.
+              </div>
+              <div class="card-footer border-0 bg-white d-flex justify-content-between">
+                <span>&NonBreakingSpace;</span>
+                <button type="button" class="btn btn-primary">View on Behance</button>
+                <img src="/images/spade-down.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- CARD-6 -->
+          <div class="col-12 col-lg-4 mt-5">
+            <div class="card container border-0 bg-white g-3">
+              <div class="card-header border-0 pt-4 bg-white d-flex justify-content-between">
+                <img src="/images/heart-up.svg" alt="">
+                <span class="badge badge-secondary text-dark">Print & Branding</span>
+              </div>
+              <img src="/images/NextEnvironmental-Mockup-V2.jpg" alt="" class="mx-4">
+              <div class="card-body ">
+                <h5 class="card-title text-center"><strong>Next Environmental</strong></h5>
+                <p class="card-text">Complete rebrand for an environmental consultation company. This project was heavy
+                  on collaboration and included logo design and stationary design.
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-white d-flex justify-content-between">
+                <span>&NonBreakingSpace;</span>
+                <button type="button" class="btn btn-primary">View on Behance</button>
+                <img src="/images/heart-down.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 3 -->
+        <div class="row container g-3 mt-1 mb-3">
+          <!-- CARD 7 -->
+          <div class="col-12 col-lg-4 mt-1 ">
+            <div class="card container border-0 bg-white g-3">
+              <div class="card-header border-0 pt-4 bg-white d-flex justify-content-between">
+                <img src="/images/diamond-up.svg" alt="" class="">
+                <span class="badge badge-light text-dark">Marketing Collateral</span>
+              </div>
+              <img src="/images/Social-Mockup.jpg" alt="" class="mx-4  ">
+              <div class="card-body ">
+                <h5 class="card-title text-center"><strong>Social Artworks</strong></h5>
+                <p class="card-text">Take a look at some social artworks I’ve done in the past. I’ve done graphics for
+                  Instagram, Facebook, Twitter, and even LinkedIn.
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-white d-flex justify-content-between">
+                <span>&NonBreakingSpace;</span>
+                <button type="button" class="btn btn-primary">View on Behance</button>
+                <img src="/images/diamond-down.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- CARD-8 -->
+          <div class="col-12 col-lg-4 mt-4">
+            <div class="card container border-0 bg-white g-3">
+              <div class="card-header border-0 pt-4 bg-white d-flex justify-content-between">
+                <img src="/images/club-up.svg" alt="">
+                <span class="badge badge-light text-dark">UX/UI
+                </span>
+              </div>
+              <img src="/images/VancouverisAwesome-Mockup.jpg" alt="" class="mx-4 ">
+              <div class="card-body ">
+                <h5 class="card-title text-center"><strong>Vancouver is Awesome</strong></h5>
+                <p class="card-text">A templated site I designed for a large scale media outlet. The template has since
+                  been adapted and used by other media outlets.
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-white d-flex justify-content-between">
+                <span>&NonBreakingSpace;</span>
+                <button type="button" class="btn btn-primary">View on Behance</button>
+                <img src="/images/club-down.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- CARD-9 -->
+          <div class="col-12 col-lg-4 mt-5">
+            <div class="card container border-0 bg-white g-3">
+              <div class="card-header border-0 pt-4 bg-white d-flex justify-content-between ">
+                <img src="/images/spade-up.svg" alt="">
+                <span class="badge badge-secondary text-dark">Print & Branding</span>
+              </div>
+              <img src="/images/TaranisConstruction-Mockup-V2.jpg" alt="" class="mx-4">
+              <div class="card-body ">
+                <h5 class="card-title text-center"><strong>Taranis Construction</strong></h5>
+                <p class="card-text">A construction company in Surrey. I played a part in every stage of this rebrand,
+                  from logo design to website development.
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-white d-flex justify-content-between">
+                <span>&NonBreakingSpace;</span>
+                <button type="button" class="btn btn-primary">View on Behance</button>
+                <img src="/images/spade-down.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </section>
+
+    <!-- Contact Section -->
     <section id="contact">
       <div class="container-fluid ">
-        <div id="contact-box" class="row justify-content-center text-light px-5 py-5">
-          <div class="col text-center" style="padding: 20px 40px 0px 40px; box-sizing: border-box;">
+        <div id="contact-box" class="row justify-content-center text-light px-5 py-4">
+          <div class="col-12 col-lg-6 text-center" style="padding: 20px 40px 0px 40px; box-sizing: border-box;">
             <h4>You can't leave a tea party <br>without a cup of tea, you know?</h4><br>
-            <img src="/images/Floating-Teacups.jpg" alt="Floating-Teacups" class="img-fluid anime" width="400px"
-              style="z-index: -1;">
+            <img src="/images/Floating-Teacups.jpg" alt="Floating-Teacups" class="img-fluid border-0" id="flow"
+              width="400px">
           </div>
-          <div id="contact-text" class="col mx-5 px-5 " style="padding: 20px 40px 0px 40px; box-sizing: border-box;">
+          <div id="contact-text" class="col-12 col-lg-6 " style="padding: 20px 0px 0px 0px; box-sizing: border-box;">
             <p class=""><small>Leaving so soon? I feel like we've barely scratched the surface! I haven't had a chance
-              to tell you about my smokey bear obsession, my love for poutine, or my bad genre film
-              collection!<br><br>
-              If you have a project for me or simply want to get to know me better, why don’t you invite me out for a
-              cup of tea?</small>
+                to tell you about my smokey bear obsession, my love for poutine, or my bad genre film
+                collection!<br><br>
+                If you have a project for me or simply want to get to know me better, why don’t you invite me out for a
+                cup of tea?</small>
             </p>
-            <div class="row d-flex flex-column">
-              <div id="key-link" class="col py-2">
-                <img src="/images/Email-Key.jpg" class="img-fluid" width="100px"alt="email-key">
-                <a href="mailto:hello@lebonsiu.com" style="text-decoration:underline" class=" h5 text-white"><strong>hello@lebonsiu.com</strong></a>
-               </div>
-              <div id="key-link" class="col py-2 ">
-                <img src="/images/LinkedIn-Key.jpg" class="img-fluid" width="100px"alt="linkedin-key">
-                <a href="https://www.linkedin.com/in/lebon-siu/" style="text-decoration:underline" class=" h5 text-white"><strong>LinkedIn</strong></a> 
+            <div class="row  d-flex flex-column justify-content-center">
+              <div class="anime">
+                <div id="key-link" class="col py-2" style="width: fit-content;">
+                  <img src="/images/Email-Key.jpg" class="img-fluid" width="100px" alt="email-key">
+                  <a href="mailto:hello@lebonsiu.com" style="text-decoration:underline"
+                    class=" h5 text-white"><strong>hello@lebonsiu.com</strong></a>
+                </div>
+                <div id="key-link" class="col py-2 " style="width: fit-content;">
+                  <img src="/images/LinkedIn-Key.jpg" class="img-fluid" width="100px" alt="linkedin-key">
+                  <a href="https://www.linkedin.com/in/lebon-siu/" style="text-decoration:underline"
+                    class=" h5 text-white"><strong>LinkedIn</strong></a>
+                </div>
+                <div id="key-link" class="col py-2 " style="width: fit-content;">
+                  <img src="/images/BH-Key.jpg" class="img-fluid" width="100px" alt="behance-key">
+                  <a href="https://www.behance.net/lebon-siu" style="text-decoration:underline"
+                    class=" h5 text-white"><strong>
+                      Behance</strong></a>
+                </div>
               </div>
-              <div id="key-link" class="col py-2 ">
-                <img src="/images/BH-Key.jpg" class="img-fluid" width="100px"alt="behance-key">
-                <a href="https://www.behance.net/lebon-siu" style="text-decoration:underline" class=" h5 text-white"><strong>
-                Behance</strong></a> 
-              </div>
-            </div>
-            <div class="row">
-              
             </div>
           </div>
-          
-          
         </div>
-        
-        </div>
+      </div>
       </div>
 
     </section>
-    <footer id = "footer" class="text-light text-center position-relative py-2">
+
+    <!-- Page Footer -->
+    <footer id="footer" class="text-light text-center position-relative py-2">
       <div class="container-fluid">
-          <p class="lead-muted ">
-              Copyright &copy; 2022 Lebon Siu.
-          
-          <a href="#head" class=" position-relative bottom-2 text-light text-decoration-underline  "> &NonBreakingSpace;Back to Top
-              <i class="bi bi-arrow-up"></i>
-              
+        <p class="lead-muted ">
+          Copyright &copy; 2022 Lebon Siu.
+
+          <a href="#head" class=" position-relative bottom-2 text-light text-decoration-underline  ">
+            &NonBreakingSpace;Back to Top
+            <i class="bi bi-arrow-up"></i>
+
           </a>
         </p>
       </div>
 
-  </footer>
+    </footer>
 
     <div class="mail-feature">
       <a href="#"><img src="/images/Featured-Button.png" alt=""></a>
