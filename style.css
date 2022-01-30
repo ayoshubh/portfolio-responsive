@@ -10,7 +10,7 @@
 
 /* Heading */
 #head{
-    background-image: url("/images/background.jpg");
+    background-image: url("images/background.jpg");
 }
 
 #navbar{
@@ -46,7 +46,7 @@ a{
 .flex-container .flex-items .flex-img{
     height:350px;
     width:350px;
-    background: url("/images/Rabbithole-Typography.svg") ;
+    background: url("images/Rabbithole-Typography.svg") ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ a{
 
 /* Portfolio Section */
 #portfolio{
-    background-image: url("/images/background.jpg");
+    background-image: url("images/background.jpg");
 }
 
 #portfolio h2{
